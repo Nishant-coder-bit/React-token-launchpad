@@ -14,7 +14,7 @@ export function TokenLaunchpad() {
             SystemProgram.createAccount({
                 fromPubkey: wallet.publicKey,
                 newAccountPubkey: mintKeypair.publicKey,
-                space: MINT_SIZE,
+                space: MINT_SIZE, // 82 bytes
                 lamports,
                 programId: TOKEN_PROGRAM_ID,
             }),
